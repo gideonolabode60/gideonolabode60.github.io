@@ -324,3 +324,38 @@ font-size:28px;
 line-height:1.8;
 color:#d6cfbd;
 }
+/* Portfolio */
+
+.portfolio{
+    padding:100px 7%;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#3B1447;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    display:block;
+}
+
+.project-info{
+    padding:25px;
+}
+
+.project-info h3{
+    margin-bottom:10px;
+}
