@@ -212,3 +212,30 @@ header{
 }
 
 }
+/* ===== BACKGROUND GLOW ===== */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#625A71;
+    filter:blur(180px);
+    opacity:.25;
+    top:-150px;
+    right:-120px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#E2D9BD;
+    filter:blur(220px);
+    opacity:.08;
+    bottom:-180px;
+    left:-150px;
+    z-index:-1;
+}
