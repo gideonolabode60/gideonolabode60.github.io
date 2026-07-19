@@ -484,3 +484,42 @@ flex-wrap:wrap;
 }
 
 }
+/* Mobile Menu */
+
+.menu-btn{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#E2D9BD;
+}
+
+@media(max-width:900px){
+
+.nav-links{
+    position:fixed;
+    top:80px;
+    left:-100%;
+    width:100%;
+    height:calc(100vh - 80px);
+    background:#2E0238;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    transition:.4s;
+}
+
+.nav-links.active{
+    left:0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.btn-nav{
+    display:none;
+}
+
+}
